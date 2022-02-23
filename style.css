@@ -133,6 +133,7 @@ p {
 }
 .navbar__menu {
   display: flex;
+  margin-right: 20px;
 }
 .navbar__menu__item {
   padding: 8px 12px;
@@ -397,6 +398,7 @@ i 또는 span과 같은 inline 요소들은 tranform을 적용하기 위해서�
 
 #contact {
   background-color: var(--color-pink);
+  margin-right: 0;
 }
 .contact__title,
 .contact_email,
