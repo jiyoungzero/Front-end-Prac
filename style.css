@@ -33,6 +33,9 @@ sticky : 속해있는 부모 요소 안에서 위치 지정 */
 
   /*Size*/
   --size-border-radius: 4px;
+
+  /* Animation */
+  --animation-duration: 300ms;
 }
 body {
   margin: 0px;
@@ -62,12 +65,16 @@ ul {
   height: 400px;
 }
 .dongguk {
-  width: 50px;
-  height: 25px;
+  width: 80px;
+  height: 40px;
 }
 .coala {
-  width: 40px;
-  height: 40px;
+  width: 80px;
+  height: 80px;
+}
+.project__img {
+  width: 400px;
+  height: 400px;
 }
 
 /* Button */
@@ -160,4 +167,71 @@ p {
   padding: 8px 12px;
   border: 2px solid var(--color-light-white);
   border-radius: var(--size-border-radius);
+}
+
+/* About */
+
+/* Section Common margin이 이상하게 잡힐 땐, margin : auto!*/
+.section {
+  text-align: center;
+  padding: 50px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about__majors {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0;
+}
+
+.major__icon {
+  width: 170px;
+  height: 170px;
+  font-size: 70px;
+  line-height: 170px;
+  margin: auto;
+  color: var(--color-blue);
+  border: 1px solid var(--color-blue);
+  border-radius: 50%;
+  margin-bottom: 80px;
+}
+
+.major__icon i {
+  transition: all var(--animation-duration) ease;
+}
+/* icon 위에 호버해도 효과는 i에만 적용을 하겠다
+i 또는 span과 같은 inline 요소들은 tranform을 적용하기 위해서는 inline-block으로 바꿔야함 */
+.major__icon i:hover {
+  color: var(--color-pink);
+  transform: rotate(-30deg) scale(1.1);
+}
+
+.major,
+.major__description {
+  color: var(--color-dark-grey);
+}
+.major__description {
+  font-size: var(--font-small);
+}
+
+.shool {
+  display: flex;
+  align-items: center;
+}
+.school__description {
+  margin: 5px 16px;
+  text-align: left;
+}
+
+.job__name,
+.job__period {
+  color: var(--color-light-grey);
+}
+
+.job__name {
+  font-size: var(--font-small);
+}
+.job__period {
+  font-size: var(--font-micro);
 }
