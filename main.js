@@ -19,7 +19,17 @@ navbarMenu.addEventListener('click', (event)=>{
     if(link == null){
         return;
     }
-    console.log(link);
     const scrollTo = document.querySelector(link);
     scrollTo.scrollIntoView({behavior:'smooth'});
+});
+
+// contact me 버튼 클릭시 contact 섹션으로 이동
+const home_contact = document.querySelector('.home__contact');
+home_contact.addEventListener('click', ()=>{
+    // const target = event2.target;
+    // const contact = target.dataset.contact;
+    // if(contact == null){return;}
+    // console.log(contact); 불필요...!!!
+    const scrollToContact = document.querySelector('#contact');
+    scrollToContact.scrollIntoView({behavior:'smooth'});
 });
