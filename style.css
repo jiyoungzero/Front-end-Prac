@@ -114,12 +114,20 @@ p {
 }
 
 #navbar {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-pink);
+  background-color: transparent;
   align-items: center;
   color: var(--color-white);
   padding: 16px;
+}
+
+#navbar.navbar--dark {
+  background-color: var(--color-pink);
+  padding: 4px;
+  transition: all var(--animation-duration) ease-in-out;
 }
 .navbar__menu {
   display: flex;
@@ -130,6 +138,12 @@ p {
   cursor: pointer;
   border-radius: var(--size-border-radius);
 }
+
+.navbar__menu__item.active {
+  border: 1px solid white;
+  border-radius: var(--size-border-radius);
+}
+
 .navbar__logo {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
@@ -153,6 +167,7 @@ p {
   background: url("imgs/homebackground.png") center/cover no-repeat;
   padding: 40px;
   text-align: center;
+  padding-top: 120px;
 }
 .home__avatar {
   width: 250px;
