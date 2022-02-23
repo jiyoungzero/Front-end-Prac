@@ -75,6 +75,7 @@ ul {
 .project__img {
   width: 400px;
   height: 300px;
+  z-index: 1;
 }
 
 /* Button */
@@ -122,6 +123,7 @@ p {
   align-items: center;
   color: var(--color-white);
   padding: 16px;
+  z-index: 2;
 }
 
 #navbar.navbar--dark {
