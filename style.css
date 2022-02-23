@@ -4,9 +4,10 @@ absolute : static 외의 속성을 가진 부모 요소를 기준으로 위치 �
 fixed : window 기준으로 위치 이동
 sticky : 속해있는 부모 요소 안에서 위치 지정 */
 
-/* Global setting */
+/* Global */
+
 :root {
-  /* Color */
+  /*color*/
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
@@ -19,70 +20,65 @@ sticky : 속해있는 부모 요소 안에서 위치 지정 */
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
   --color-black: #000000;
-
-  /* Font size */
+  /*Font size*/
   --font-large: 48px;
   --font-medium: 28px;
   --font-regular: 18px;
   --font-small: 16px;
   --font-micro: 14px;
-
-  /* Font weight */
+  /*Font weight*/
   --weight-bold: 700;
   --weight-semi-bold: 600;
   --weight-regular: 400;
-
-  /* Size */
 }
-
-/* universal tags */
-* {
-  box-sizing: border-box;
-}
-
-/* Typography */
-h1 {
-  font-size: var(--font-large);
-  font-weight: var(--weight-bold);
-  color: var(--color-black);
-  margin: 16px 0;
-}
-
-h2 {
-  font-size: var(--font-medium);
-  font-weight: var(--weight-semi-bold);
-  color: var(--color-black);
-  margin: 8px 0;
-}
-
-h3 {
-  font-size: var(--font-regular);
-  font-weight: var(--weight-regular);
-  color: var(--color-black);
-  margin: 8px 0;
-}
-
-p {
-  font-size: var(--font-regular);
-  font-weight: var(--weight-regular);
-  color: var(--color-black);
-  margin: 4px 0;
-}
-
+/* Photo size */
 .jy_logo {
   width: 16px;
   height: 16px;
 }
 
 .home__avatar {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
 }
 .dongguk {
-  width: 40px;
-  height: 20px;
+  width: 50px;
+  height: 25px;
 }
 .coala {
   width: 40px;
   height: 40px;
+}
+
+/*Typography*/
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  color: var(--color-black);
+  margin: 16px 0px;
+}
+
+h2 {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+  color: var(--color-black);
+  margin: 8px 0px;
+}
+
+h3 {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  color: var(--color-black);
+  margin: 8px 0px;
+}
+p {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  color: var(--color-black);
+  margin: 8px 0px;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
 }
