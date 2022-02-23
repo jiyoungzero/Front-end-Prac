@@ -48,7 +48,7 @@
     </section>
 
     <!-- About -->
-    <section id="about" class="section">
+    <section id="about" class="section section__container">
         <h1>About me</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
             Exercitationem maiores, amet assumenda voluptates nihil libero. Voluptas, iusto facere. 
@@ -96,71 +96,74 @@
     </section>
     <!-- Skills -->
     <section id="skills" class="section">
-        <h1>Skills</h1>
-        <h2>Skills & Attributes</h2>
-        <p>
-            Interestied in learning new technologies and do not afraid to challening to new things. Capable of working with others
-            and independently. Ability to plan and time schedule, work under strict time pressure and 
-            adapt quickly when needed.
-        </p>
-        <div class="skillset">
-            <div class="skillset__left">
-                <h3 class="skillset__title">Skills</h3>
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>HTML</span>
-                        <span>50%</span>
+        <div class="section__container">
+            <h1>Skills</h1>
+            <h2>Skills & Attributes</h2>
+            <p>
+                Interestied in learning new technologies and do not afraid to challening to new things. Capable of working with others
+                and independently. Ability to plan and time schedule, work under strict time pressure and 
+                adapt quickly when needed.
+            </p>
+            <div class="skillset">
+                <div class="skillset__left">
+                    <h3 class="skillset__title">Skills</h3>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>HTML</span>
+                            <span>55%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill_value" style="width: 55%"></div>
+                        </div>
                     </div>
-                    <div class="skill__bar">
-                        <div class="skill_value"></div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>Python</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill_value"  style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>Java</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill_value"  style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>C</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill_value"  style="width: 80%"></div>
+                        </div>
                     </div>
                 </div>
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>Python</span>
-                        <span>90%</span>
+                <div class="skillset__right">
+                    <div class="tools">
+                        <div class="skill__title">Tools</div>
+                        <ul class="tools__list">
+                            <li><span>Visual Studio Code</span></li>
+                            <li><span>Eclipes</span></li>
+                            <li><span>Android Studio</span></li>
+                        </ul>
                     </div>
-                    <div class="skill__bar">
-                        <div class="skill_value"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>Java</span>
-                        <span>70%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill_value"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>C</span>
-                        <span>80%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill_value"></div>
+                    <div class="etc">
+                        <div class="skill__title">Etc</div>
+                        <ul class="etc__list">
+                            <li><span>Git</span></li>
+                            <li><span>Math</span></li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <div class="skillset__right">
-                <div class="tools">
-                    <div class="skill__title">Tools</div>
-                    <ul class="tools__list">
-                        <li><span>Visual Studio Code</span></li>
-                        <li><span>Eclipes</span></li>
-                        <li><span>Android Studio</span></li>
-                    </ul>
-                </div>
-                <div class="etc">
-                    <div class="skill__title">Etc</div>
-                    <ul class="etc__list">
-                        <li><span>Git</span></li>
-                        <li><span>Math</span></li>
-                    </ul>
-                </div>
-            </div>
+            </div>            
         </div>
+
     </section>
     <!-- Work -->
     <section id="work" class="section">
@@ -176,7 +179,7 @@
             <a href="https://github.com/jiyoungzero" class = "project" target="blank">
                 <img 
                 class="project__img"
-                src="imgs/projects/front_project.PNG" alt="front-end">
+                src="imgs/projects/front-end_project.PNG" alt="front-end">
                 <div class="project__description">
                     <h3>Portfolio website</h3>
                     <span>Create my special Portfolio with HTML and CSS</span>
