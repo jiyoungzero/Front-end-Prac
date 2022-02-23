@@ -370,3 +370,26 @@ i 또는 span과 같은 inline 요소들은 tranform을 적용하기 위해서�
   margin-left: -12px;
   margin-top: 8px;
 }
+
+#contact {
+  background-color: var(--color-pink);
+}
+.contact__title,
+.contact_email,
+.contact__rights {
+  color: var(--color-white);
+}
+.contack__title {
+  margin: 32px 0;
+}
+.contact__link {
+  font-size: var(--font-large);
+  margin: 24px 0;
+}
+.contact__link i:hover {
+  transform: scale(1.1);
+  color: var(--color-yellow);
+}
+.contact__link i {
+  transition: all var(--animation-duration) ease-in;
+}
