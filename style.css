@@ -128,7 +128,7 @@ p {
 
 #navbar.navbar--dark {
   background-color: var(--color-pink);
-  padding: 4px;
+  padding: 0px;
   transition: all var(--animation-duration) ease-in-out;
 }
 .navbar__menu {
@@ -173,6 +173,12 @@ p {
   text-align: center;
   padding-top: 120px;
 }
+
+#home.home--transparent {
+  opacity: 0.5;
+  transition: all var(--animation-duration) ease-in-out;
+}
+
 .home__avatar {
   width: 250px;
   height: 250px;

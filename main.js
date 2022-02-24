@@ -33,3 +33,11 @@ home_contact.addEventListener('click', ()=>{
     const scrollToContact = document.querySelector('#contact');
     scrollToContact.scrollIntoView({behavior:'smooth'});
 });
+
+// 스크롤링시 페이드아웃 되듯이 올라가는 홈페이지가 투명해짐
+const home = document.querySelector(".home__container");
+const homeHeight = home.getBoundingClientRect().height;
+document.addEventListener('scroll', ()=>{
+    console.log(homeHeight); //960.4000244140625
+    home.style.opacity = 1 - window.scrollY / homeHeight;
+});
