@@ -128,7 +128,7 @@ p {
 
 #navbar.navbar--dark {
   background-color: var(--color-pink);
-  padding: 0px;
+  padding: 16px;
   transition: all var(--animation-duration) ease-in-out;
 }
 .navbar__menu {
@@ -408,18 +408,18 @@ i 또는 span과 같은 inline 요소들은 tranform을 적용하기 위해서�
   transform: translateY(0px);
 }
 .project__description h3 {
-  color: var(--color-white);
+  color: var(--color-orange);
 }
 
 .project__description h3:after {
   content: "";
-  width: 25px;
+  width: 50px;
   height: 2px;
   background-color: var(--color-dark-white);
   display: block;
   position: relative;
   left: 50%;
-  margin-left: -12px;
+  transform: translate(-50%);
   margin-top: 8px;
 }
 
@@ -477,6 +477,7 @@ i 또는 span과 같은 inline 요소들은 tranform을 적용하기 위해서�
   #navbar {
     flex-direction: column;
     align-items: flex-start;
+    background-color: var(--color-pink);
   }
   .navbar__menu {
     flex-direction: column;
@@ -484,6 +485,14 @@ i 또는 span과 같은 inline 요소들은 tranform을 적용하기 위해서�
     width: 100%;
     display: none;
   }
+  .navbar__menu.open {
+    display: block;
+  }
+
+  .navbar.navbar--dark {
+    padding: 16px;
+  }
+
   .about__majors {
     flex-direction: column;
   }

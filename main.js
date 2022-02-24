@@ -19,9 +19,17 @@ navbarMenu.addEventListener('click', (event)=>{
     if(link == null){
         return;
     }
+    navbarMenu.classList.remove('open');
     const scrollTo = document.querySelector(link);
     scrollTo.scrollIntoView({behavior:'smooth'});
 });
+
+// navbar 토글 버튼 클릭시 메뉴 나오도록 (for small screen)
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+    navbarMenu.classList.toggle('open');
+});
+
 
 // contact me 버튼 클릭시 contact 섹션으로 이동
 const home_contact = document.querySelector('.home__contact');
@@ -70,8 +78,9 @@ workBtnContainer.addEventListener('click', (e) => {
 
     // 이전에 선택된 버튼의 효과를 없애고 선택된 버튼에 효과주기
     const active = document.querySelector('.category__btn.selected');
-    active.classList.remove('selected');
-    const target = e.target.nodeName === "BUTTON" ? e.target : e.target.parentNode;
+    if (active != null) {
+        active.classList.remove('selected');
+    }
     e.target.classList.add('selected');
 
 
@@ -88,3 +97,4 @@ workBtnContainer.addEventListener('click', (e) => {
         projectContainer.classList.remove('ani-out');
     },300);
 });
+
