@@ -58,3 +58,26 @@ arrow__up.addEventListener('click', ()=>{
     const scrollToHome = document.querySelector('#home');
     scrollToHome.scrollIntoView({behavior:'smooth'});
 });
+
+
+// work 버튼 클릭시 해당 타입의 프로젝트가 뜨도록
+const workBtnContainer = document.querySelector('.work__categories');
+const projectContainer = document.querySelector('.work__projects');
+const projects = document.querySelectorAll('.project');
+workBtnContainer.addEventListener('click', (e) => {
+    const filter = e.target.parentNode.dataset.filter || e.target.dataset.filter;
+    if(filter == null){return;}
+
+    projectContainer.classList.add('ani-out');
+
+    setTimeout(()=>{
+        projects.forEach((project) =>{
+            if(filter === 'all' || filter === project.dataset.type){
+                project.classList.remove('invisible');
+            }else{
+                project.classList.add('invisible');
+            }
+        });
+        projectContainer.classList.remove('ani-out');
+    },300);
+});

@@ -364,13 +364,25 @@ i 또는 span과 같은 inline 요소들은 tranform을 적용하기 위해서�
 .work__projects {
   display: flex;
   flex-wrap: wrap;
+  opacity: 1;
   justify-content: center;
+  transition: all var(--animation-duration) ease-out;
 }
+
+.work__projects.ani-out {
+  opacity: 0;
+  transform: scale(0.96) translateY(40px);
+}
+
 .project {
   position: relative;
   width: 280px;
   height: 250px;
   margin: 2px;
+}
+
+.project.invisible {
+  display: none;
 }
 .project__img {
   max-width: 100%;
