@@ -68,6 +68,13 @@ workBtnContainer.addEventListener('click', (e) => {
     const filter = e.target.parentNode.dataset.filter || e.target.dataset.filter;
     if(filter == null){return;}
 
+    // 이전에 선택된 버튼의 효과를 없애고 선택된 버튼에 효과주기
+    const active = document.querySelector('.category__btn.selected');
+    active.classList.remove('selected');
+    const target = e.target.nodeName === "BUTTON" ? e.target : e.target.parentNode;
+    e.target.classList.add('selected');
+
+
     projectContainer.classList.add('ani-out');
 
     setTimeout(()=>{
