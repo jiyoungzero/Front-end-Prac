@@ -199,6 +199,11 @@ p {
   border: 2px solid var(--color-light-white);
   border-radius: var(--size-border-radius);
 }
+
+.home__contact:hover {
+  color: var(--color-dark-pink);
+  border-color: var(--color-dark-pink);
+}
 .top__btn {
   position: fixed;
   color: var(--color-dark-grey);
@@ -330,6 +335,9 @@ i 또는 span과 같은 inline 요소들은 tranform을 적용하기 위해서�
   border-radius: var(--size-border-radius);
   font-size: var(--font-regular);
   padding: 8px 48px;
+  margin-bottom: 5px;
+  width: 228px;
+  position: relative;
 }
 .work__categories {
   margin: 40px;
@@ -355,9 +363,9 @@ i 또는 span과 같은 inline 요소들은 tranform을 적용하기 위해서�
   height: 24px;
   display: inline-block;
   line-height: 24px;
-  position: relative;
+  position: absolute;
   top: -20px;
-  left: 4px;
+  right: 30px;
   opacity: 0;
   transition: all var(--animation-duration) ease-in;
 }
@@ -471,6 +479,23 @@ i 또는 span과 같은 inline 요소들은 tranform을 적용하기 위해서�
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
+  :root {
+    /*Font size*/
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+  }
+  .jy_logo {
+    width: 28px;
+    height: 28px;
+    margin-left: 0px;
+  }
+  .section {
+    padding: 16px;
+    padding-top: 45px;
+  }
   .navbar__toggle-btn {
     display: block;
   }
@@ -495,14 +520,32 @@ i 또는 span과 같은 inline 요소들은 tranform을 적용하기 위해서�
 
   .about__majors {
     flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 0px;
   }
   .major {
-    margin-bottom: 38px;
+    margin-bottom: 30px;
   }
   .skillset {
     flex-direction: column;
   }
   .project {
     flex-grow: 1;
+  }
+
+  .category__btn {
+    padding: 8px;
+  }
+
+  .navbar__toggle-btn {
+    margin-right: 20px;
+  }
+  .arrow__up {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    right: 16px;
+    bottom: 16px;
+    line-height: 50px;
   }
 }
