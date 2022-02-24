@@ -41,3 +41,20 @@ document.addEventListener('scroll', ()=>{
     console.log(homeHeight); //960.4000244140625
     home.style.opacity = 1 - window.scrollY / homeHeight;
 });
+
+// 스크롤링 시 arrowup버튼 보이도록 하기
+const arrow__up = document.querySelector('.arrow__up');
+document.addEventListener('scroll', ()=>{
+    if(window.scrollY > homeHeight / 2){
+        arrow__up.classList.add('visible');
+    }
+    else{
+        arrow__up.classList.remove('visible');
+    }
+})
+
+// arrow up 버튼 클릭시 홈 화면으로 이동
+arrow__up.addEventListener('click', ()=>{
+    const scrollToHome = document.querySelector('#home');
+    scrollToHome.scrollIntoView({behavior:'smooth'});
+});
