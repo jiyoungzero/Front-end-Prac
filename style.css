@@ -144,6 +144,11 @@ p {
   border-radius: var(--size-border-radius);
 }
 
+.navbar__menu__item.active {
+  border-color: var(--color-light-white);
+  border: 1px solid;
+}
+
 .navbar__logo {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
@@ -519,6 +524,9 @@ i 또는 span과 같은 inline 요소들은 tranform을 적용하기 위해서�
     padding: 16px;
   }
 
+  .navbar__menu__item.active {
+    border: 1px solid var(--color-light-white);
+  }
   .about__majors {
     flex-direction: column;
     margin-top: 30px;
