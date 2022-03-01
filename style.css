@@ -250,7 +250,7 @@ p {
 }
 /* icon 위에 호버해도 효과는 i에만 적용을 하겠다
 i 또는 span과 같은 inline 요소들은 tranform을 적용하기 위해서는 inline-block으로 바꿔야함 */
-.major__icon i:hover {
+.major__icon:hover i {
   color: var(--color-pink);
   transform: rotate(-30deg) scale(1.1);
 }
