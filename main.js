@@ -20,9 +20,7 @@ navbarMenu.addEventListener('click', (event)=>{
         return;
     }
     navbarMenu.classList.remove('open');
-    const scrollTo = document.querySelector(link);
-    selectNavItem(target);
-    scrollTo.scrollIntoView({behavior:'smooth'});
+    scrollIntoView(link);
 });
 
 // navbar 토글 버튼 클릭시 메뉴 나오도록 (for small screen)
@@ -39,8 +37,7 @@ home_contact.addEventListener('click', ()=>{
     // const contact = target.dataset.contact;
     // if(contact == null){return;}
     // console.log(contact); 불필요...!!!
-    const scrollToContact = document.querySelector('#contact');
-    scrollToContact.scrollIntoView({behavior:'smooth'});
+    scrollIntoView('#contact');
 });
 
 // 스크롤링시 페이드아웃 되듯이 올라가는 홈페이지가 투명해짐
@@ -64,8 +61,7 @@ document.addEventListener('scroll', ()=>{
 
 // arrow up 버튼 클릭시 홈 화면으로 이동
 arrow__up.addEventListener('click', ()=>{
-    const scrollToHome = document.querySelector('#home');
-    scrollToHome.scrollIntoView({behavior:'smooth'});
+    scrollIntoView('#home');
 });
 
 
@@ -100,6 +96,7 @@ workBtnContainer.addEventListener('click', (e) => {
 });
 
 
+
 // 1. 모든 섹션 요소들과 메뉴 아이템들을 가지고 온다
 // 2. IntersectionObserver를 이용해서 모든 섹션들을 관찰한다.
 // 3. 보여지는 섹션에 해당하는 메뉴 아이텐을 활성화 시킨다.
@@ -122,6 +119,13 @@ function selectNavItem(selected){
     selectedNavItem.classList.remove('active');
     selectedNavItem = selected;
     selectedNavItem.classList.add('active');
+}
+
+// 함수로..
+function scrollIntoView(selector){
+    const scrollTo = document.querySelector(selector);
+    scrollTo.scrollIntoView({behavior:'smooth'});
+    selectNavItem(navItems[sectionIds.indexOf(selector)]);
 }
 
 const observerOptions = {
