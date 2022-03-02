@@ -121,7 +121,7 @@ function selectNavItem(selected){
     selectedNavItem.classList.add('active');
 }
 
-// 함수로..
+// 함수로 스크롤 되는 함수 만들기 
 function scrollIntoView(selector){
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({behavior:'smooth'});
