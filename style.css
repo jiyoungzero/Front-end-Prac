@@ -72,6 +72,10 @@ ul {
   width: 80px;
   height: 80px;
 }
+.likelion {
+  width: 80px;
+  height: 70px;
+}
 .project__img {
   width: 400px;
   height: 300px;
@@ -271,6 +275,13 @@ i 또는 span과 같은 inline 요소들은 tranform을 적용하기 위해서�
 .shool {
   display: flex;
   align-items: center;
+}
+
+.shool2 {
+  display: flex;
+  align-items: center;
+  height: auto;
+  width: auto;
 }
 .school__description {
   margin: 5px 16px;
