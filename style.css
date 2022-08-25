@@ -11,14 +11,19 @@ sticky : 속해있는 부모 요소 안에서 위치 지정 */
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
-  --color-pink: #fe918d;
-  --color-dark-pink: #ff6863;
+  /* --color-pink: #fe918d; */
+  /* --color-dark-pink: #ff6863; */
+
+
+    --color-pink: #66d68f;
+  --color-dark-pink: #39a19d;
+
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
   --color-light-grey: #7c7979;
-  --color-blue: #73aace;
-  --color-yellow: #fff7d1;
-  --color-orange: #feb546;
+  --color-blue: #1882ed;
+  --color-yellow: #d1ffde;
+  --color-orange: #85ed7e;
   --color-black: #000000;
   /*Font size*/
   --font-large: 48px;
@@ -176,7 +181,7 @@ p {
 
 /* Home */
 #home {
-  background: url("imgs/homebackground.png") center/cover no-repeat;
+  background: url("imgs/homebackground2.png") center/cover no-repeat;
   padding: 40px;
   text-align: center;
   padding-top: 120px;
