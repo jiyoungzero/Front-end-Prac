@@ -69,6 +69,17 @@ ul {
   width: 400px;
   height: 400px;
 }
+
+.work__experience{
+  width: 80px;
+  height: 80px;
+}
+
+.education{
+  width: 80px;
+  height: 80px;
+}
+
 .dongguk {
   width: 80px;
   height: 40px;
