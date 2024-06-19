@@ -71,13 +71,19 @@ ul {
 }
 
 .work__experience{
-  width: 80px;
-  height: 80px;
+  font-size: var(--font-regular);
+  width: 90px;
+  height: 90px;
+  margin: 5px 16px;
+  text-align: left;
 }
 
 .education{
-  width: 80px;
-  height: 80px;
+  font-size: var(--font-regular);
+  width: 90px;
+  height: 90px;
+  margin: 5px 16px;
+  text-align: left;
 }
 
 .dongguk {
