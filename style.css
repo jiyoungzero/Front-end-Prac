@@ -70,22 +70,6 @@ ul {
   height: 400px;
 }
 
-.work__experience{
-  font-size: var(--font-regular);
-  width: 90px;
-  height: 90px;
-  margin: 5px 16px;
-  text-align: left;
-}
-
-.education{
-  font-size: var(--font-regular);
-  width: 90px;
-  height: 90px;
-  margin: 5px 16px;
-  text-align: left;
-}
-
 .dongguk {
   width: 80px;
   height: 40px;
